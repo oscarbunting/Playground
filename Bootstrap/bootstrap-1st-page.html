@@ -38,17 +38,21 @@
         <p>The <code>Fluid-container</code> class makes the container span the entire width of larger screens.</p>
     </div>
 
-    <div class="fluid-container">
+    <div class="container">
 
     <h1>Testing Grid With Bootstrap</h1>
 
-    <p>With bootstrap, rows act as containers for columns, and will contain as many columns as there are items inside the 'row' div.</p>
+    <p>With bootstrap, rows act as containers for columns, and will contain as many columns as there are items inside the 'row' div.<br>
+    To chnage the starting position of a colulm, we can use the <code>offset</code> class. For example in the below grid, the item is offset by 6, which should make the column appear to start in the middle. The clsass for offsetting is <code>offset-(number between 1-6)</code> For example to offset by 6 like below, we use the <code>offset-6</code> class in the column.</p>
     <div class="row">
         <div class="col-6">
             <div>Column 1 </div>
         </div>
         <div class="col-6">
             <div>Column 2</div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-6">Offset column</div>
         </div>
     </div>
 
