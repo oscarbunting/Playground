@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/Grid/grid-style.css">
+    </head>
+    <body>
+        <h1>1st Grid:</h1>
+        <p>The large shape with the blue outline is the container, the smaller items with the red outlines are the child items.<br>
+            You can chnage how many colums a grid has with the <code>grid-template-columns</code> property followed by size values for how many columns you wish to create.<br>
+            For example: <code>grid-template-columns: 100px 100px 100px 100px</code> would create a grid with 4, 100px wide columns. You can also simplaify this with the repeat function, for example: <code>grid-template-columns: repeat(4, 10px);</code> would create 4 columns with the width being 10px.
+</p>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div><div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+        <h1>2nd Grid:</h1>
+        <p>This is another way to style a grid, using only one line. With the <code>Grid-template</code> property followed by the amount and size of rows, a forward slash and then the size and amount of columns. For example: <code>Grid-template: 50% 50% / 1fr 1fr</code> creates 2 rows which are 50% heigh, and 2 evenly sized columns which each take up 1 fractional unit of space each. </p>
+        <div class="inline-style-grid-container">
+            <div class="grid-item">12</div>
+            <div class="grid-item">12</div><div class="grid-item">12</div><div class="grid-item">12</div>
+        </div>
+        <h1>3rd Grid:</h1>
+        <p>In This grid we will use the <code>row-gap</code> and <code>column-gap</code> properties to control the spacing between grid items. Unlike margin, the gap property only adds space in between grid items, no on all sides. For example: <code>row-gap: 10px creates a 10px gap between all the rows.</code> You can do the same with <code>column-gap</code>, or for shorthand use the <code>gap:</code> property to set the gap for rows and columns at the same time. For example <code>gap: 5px 10px;</code> would add 5px between rows and 10px between columns.</p>
+        <div class="grid-gap-demo">
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+        </div>
+        <h1>4th grid:</h1>
+        <p>On this grid we'll make an item span (take up) multiple columns. By using the <code>grid-column:</code> property we can choose how many columns the item should span by uisng the <code>span 2</code> value. For example <code>grid-column: span 2;</code> makes the item it's applied to span 2 columns. The same can bbe applied to rows by using the <code>grid-row</code> property.</p>
+        <div class="span-demo-container">
+            <div class="item1">Item 1, takes up 2 columns</div>
+            <div class="item2">item 2, takes up 1 column</div>
+            <div class="item3">Item 3 takes up 3 columns</div>
+        </div>
+        <h1>5th grid:</h1>
+        <p>We can also use areas to span entire columns themselves, and name items within teh columns to make our code more readable. For eaxample if we name each child item with a unique number, we can layout the columns like so: <code>grid-template-areas:"item1 . item2 item3"</code><br>full stops (.) display empty columns. To layout multiple rows like this place each rows content in a different pair of quote marks, for readableity place the code for each row on a new line.<br>For example:<br> <code>grid-template-areas:<br>"item1 item2"<br>"item3 item4";</code> <br>displays item 1 and 2 on the 1st row, and items 3 and 4 on the 2nds row down. We can specify where items should go by giving them the <code>grid-area</code> property with the value matching a columns grid-template-areas name.</p>
+        <div class="area-demo">
+            <div class="area-item-1">Area1</div>
+            <div class="area-item-2">Area2</div>
+            <div class="area-item-3">Area3</div>
+            <div class="area-item-4">Area4</div>
+        </div>
+        <h1>Building an entire page layout with grid:</h1>
+        <p>By using named areas, we can create headers, footers, sidebars and more in a  semantic and easy to understand way.</p>
+        <div class="website-container">
+            <div class="item header"><a href="/home">Header</a></div>
+            <div class="item sidebar">Sidebar</div>
+            <div class="item main">Main Content</div>
+            <div class="item footer">Footer</div>
+        </div>
+        <h1>Aligning items based on the grid area:</h1>
+        <p>By using the <code>justify items:</code> property, we cen either stretch the items, have them start at the start, middle or the end of their row. The default is stretch. To align items in the otehr axis (column) we use the <code>align-items:</code> property. For example: <code>justify-items: start;</code> places the items on the left side of their border, like this:</p>
+        <div class="website-container-justfy">
+            <div class="item header"><a href="/home">Header</a></div>
+            <div class="item sidebar">Sidebar</div>
+            <div class="item main">Main Content</div>
+            <div class="item footer">Footer</div>
+        </div>
+        <h1>Using Grid and Flexbox together:</h1>
+        <p>grid is a great tool for creating the genral layout of an entire page, but it has its limitations.<br>
+        Sometimes, using a flexbox is better, but that also has its limits. We can get the best of both worlds by combining them together.<br>
+        Using grid for the main layout, and Flex for certain sectons of the site. We can do this by placing a flexbbox container inside a grid item. For example, in the below layout the header grid item is also a flexbox container, which allows us to justify only items inside that container, not the wntire page. When combining Grid and flex, we can use properties from both, for example the grid <code>grid-area</code> value, or the flex <code>justify-content</code> property.</p>
+        <div class="website-container">
+            <div class="item flex-header"><a href="/home">Header</a></div>
+            <div class="item sidebar">Sidebar</div>
+            <div class="item main">Main Content</div>
+            <div class="item footer">Footer</div>
+        </div>
+    </body>
+</html>

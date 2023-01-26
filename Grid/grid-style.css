@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px 5vh
+}
+
+.grid-container {
+    border: dashed blue;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 50px;
+    padding: 10px;
+}
+
+.grid-item {
+    border: dashed red;
+    margin: 5px;
+    background-color: black;
+    text-align: center;
+    color:aliceblue;
+}
+
+.inline-style-grid-container {
+    display: grid;
+    grid-template: 50% 50% / 1fr 1fr;
+    border: dashed purple;
+    padding: 10px;
+    height: 300px
+
+}
+
+.grid-gap-demo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 45px);
+    border: dashed aqua;
+    padding: 10px;
+    row-gap: 20px;
+    column-gap: 10px;
+    gap: 2px 2px;
+
+}
+
+.span-demo-container {
+    display: grid;
+    border: dashed;
+    padding: 10px;
+    grid-template: 1fr 1fr / 25% 25% 25% 25%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.item1 {
+    text-align: center;
+    border: dashed blue;
+    grid-column: span 2;
+    background-color: bisque;
+}
+
+.item2 {
+    text-align: center;
+border: dashed blue;
+background-color: lightblue;
+}
+.item3 {
+    text-align: center;
+    border: dashed blue;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    grid-column: span 3;
+}
+
+.area-demo {
+    display: grid;
+    border: dashed brown;
+    padding: 10px;
+    gap: 10px;
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+
+}
+
+.area-item-1 {
+
+    grid-area: item1;
+    border: dashed blue;
+    padding: 10px;
+}
+
+.area-item-2 {
+    grid-area: item2;
+    border: dashed blue;
+    padding: 10px;
+}
+
+
+.area-item-3{
+    border: dashed blue;
+    padding: 10px;
+}
+
+
+.area-item-4 {
+    border: dashed blue;
+    padding: 10px;
+}
+
+.website-container {
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+    border: dashed 1px black;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.website-container-justfy {
+    display: grid;
+    justify-items: start;
+    grid-gap: 5px;
+    padding: 5px;
+    border: dashed 1px black;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.item {
+    background-color: #1E96FF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+   }
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+
+    grid-area: footer;
+}
+
+.flex-header {
+    grid-area: header;
+    display: flex;
+    justify-content: end;
+}

@@ -1,0 +1,20 @@
+.heading1 {
+    color: orange;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.header .heading1 {
+    color: black;
+    font-style:normal;
+    font-weight: bold;
+}
+
+.green .heading2{
+    color: green;
+}
+
+.red .heading2 {
+    color: red;
+}
