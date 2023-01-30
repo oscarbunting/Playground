@@ -10,20 +10,44 @@
 <body>
     <div class="container">
         <h1>Javascript Playground</h1>
-        <p class="lead">Here there are demos and tutorials on the basics of Javascript.</p>
-        <hr/>
+
+            <p class="lead">Here there are demos and tutorials on the basics of Javascript.</p>
+                <hr/>
+
         <h3>Creating Variables</h3>
-        <p>We can use either <code class="p-1 bg-light rounded">let</code> or <code class="p-1 bg-light rounded">const</code> to define variables.
-        Variable names cannot container spaces,  but they can contain numbers. when we need to combbine more than one word, we use camel Case, leaving the 1st word lowercase and capitalising the 1st letter of each additional word. <br>For example: <code class="p-1 bg-light rounded language-javascript">let word1Word2</code></p>
-        <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_variables.asp" role="button">Read Documentation</a>
-        <hr/>
+
+            <p>We can use either <code class="p-1 bg-light rounded">let</code> or <code class="p-1 bg-light rounded">const</code> to define variables.
+            Variable names cannot container spaces,  but they can contain numbers. when we need to combbine more than one word, we use camel Case, leaving the 1st word lowercase and capitalising the 1st letter of each additional word. <br>For example: <code class="p-1 bg-light rounded language-javascript">let word1Word2</code></p>
+                
+                <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_variables.asp" role="button">Read Documentation</a>
+                <hr/>
+
         <h3>Storing values with variables</h3>
-        <p>After creating a variable, we can use it to store data, in this case we call that data a Value.<br>
-        We use an equal sign to show which data to store within, for example: <br><code class="p-1 bg-light rounded language-javascript">const userCity = "Reigate";</code><br>
-        In the example above, the type of data we're storing is called a string, a string can contain numbers and letters with spaces and special charecters.</p>
-        <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables" role="button">Read Documentation</a>
-        <hr/>
-        
+
+            <p>After creating a variable, we can use it to store data, in this case we call that data a Value.<br>
+            We use an equal sign to show which data to store within, for example: <br><code class="p-1 bg-light rounded language-javascript">const userCity = "Reigate";</code><br>
+            In the example above, the type of data we're storing is called a string, a string can contain numbers and letters with spaces and special charecters.</p>
+                
+                <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables" role="button">Read Documentation</a>
+                <hr/>
+
+        <h3>Differences between <code class="p-1 bg-light rounded language-javascript">let</code> and <code class="p-1 bg-light rounded language-javascript">const</code></h3>
+
+            <p>Const, which stands for constant, is used to declare variables that aren't supposed to change, for example:<br>
+            <code class="p-1 bg-light rounded language-javascript">const englandCapital = "London";</code><br><br>
+            To make it extra clear that a variable is constant and shouldn't chnage, we can name it in all caps, for example:<br>
+            <code class="p-1 bg-light rounded language-javascript">const BIRTHDAY = "23/08/03"</code><br><br>
+            We can't use <code class="p-1 bg-light rounded language-javascript">camelCase</code> if we use the uppercase standard, so we use <code class="p-1 bg-light rounded language-javascript">snale_case</code> instead when we make the variable name all caps.
+            If we try and update a constant variable, we will throw an error. On the other hand, variables that are declared using let can be updated by using the assign <code class="p-1 bg-light rounded language-javascript">=</code>
+            operator. For example we could create a variable like this:<br>
+            <code class="p-1 bg-light rounded language-javascript">let oscarAge = 20</code><br>
+            And then update the variable at a later time like this:<br>
+            <code class="p-1 bg-light rounded language-javascript">oscarAge = 21</code><br><br>
+            We'll need to use both <code class="p-1 bg-light rounded language-javascript">let</code> and <code class="p-1 bg-light rounded language-javascript">const</code>, and in theory we could use them interchangeably. However, we should try to use <code class="p-1 bg-light rounded language-javascript">const</code> by default</p>
+                
+                <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_let.asp" role="button">Read Documentation</a>
+                <hr/>
+       
     </div>
     
 </body>
