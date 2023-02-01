@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Javascript Playground</h1>
+        <h1 class="pt-3">Javascript Playground</h1>
+            <img class="img-fluid" src="https://miro.medium.com/max/952/1*OAXivevUVDA6ddtq-7jwVw.gif" alt="rainbow cat running through space gif">
 
             <p class="lead">Here there are demos and tutorials on the basics of Javascript.</p>
                 <hr/>
@@ -37,7 +38,7 @@
             <code class="p-1 bg-light rounded language-javascript">const englandCapital = "London";</code><br><br>
             To make it extra clear that a variable is constant and shouldn't chnage, we can name it in all caps, for example:<br>
             <code class="p-1 bg-light rounded language-javascript">const BIRTHDAY = "23/08/03"</code><br><br>
-            We can't use <code class="p-1 bg-light rounded language-javascript">camelCase</code> if we use the uppercase standard, so we use <code class="p-1 bg-light rounded language-javascript">snale_case</code> instead when we make the variable name all caps.
+            We can't use <code class="p-1 bg-light rounded language-javascript">camelCase</code> if we use the uppercase standard, so we use <code class="p-1 bg-light rounded language-javascript">snake_case</code> instead when we make the variable name all caps.
             If we try and update a constant variable, we will throw an error. On the other hand, variables that are declared using let can be updated by using the assign <code class="p-1 bg-light rounded language-javascript">=</code>
             operator. For example we could create a variable like this:<br>
             <code class="p-1 bg-light rounded language-javascript">let oscarAge = 20</code><br>
@@ -48,6 +49,30 @@
                 <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_let.asp" role="button">Read Documentation</a>
                 <hr/>
        
+        <h3>Building Instructions</h3>
+
+            <p>When we write lines of code, we're giving the computer instructions, and the order in which we give the computer those instructions is important.
+            In order to see what our instructions did, we can output the result to the console using the <code class="p-1 bg-light rounded language-javascript">console.log</code> instuction.
+            For example: <code class="p-1 bg-light rounded language-javascript">console.log("Hello, World");</code> would output <code class="p-1 bg-light rounded language-javascript">Hello, World</code>.
+            We can us <code class="p-1 bg-light rounded language-javascript">console.log</code> as often as we'd like. The computer will display the output on a line in the console.
+            We can also use <code class="p-1 bg-light rounded language-javascript">console.log</code> to output the value inside a variable. For example:<br>
+            <code class="language-javascript p-1 bg-light rounded">const oscar = "Bunting";<br>console.log (oscar);<br><br><b>Output/Console:</b><br><br>Bunting</code>
+            <br><br>In this example, it's critial to define the variable before trying to log it's value to the console, otherwise it will throw an error.</p>
+
+                <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log" role="button">Read Documentation</a>
+                <hr/>
+
+        <h3>Using Variables</h3>
+
+            <p>We alrerady know that we use <code class="p-1 bg-light rounded language-javascript">let</code> to create variables that can be updated.
+            We can also set the value of one variable to be the name of another variable to output the stored value. For example:<br><br>
+            <code class="p-1 bg-light rounded language-javascript">let defaultLocation = "Reigate";<br>
+            let currentLocation = "London";<br><br>
+            currentLocation = defaultLocation;<br>
+            console.log(currentLocation);<br><br>
+            <b>Output/Console:</b><br><br>
+            Reigate
+        </code></p>
     </div>
     
 </body>
