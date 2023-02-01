@@ -56,11 +56,23 @@
             For example: <code class="p-1 bg-light rounded language-javascript">console.log("Hello, World");</code> would output <code class="p-1 bg-light rounded language-javascript">Hello, World</code>.
             We can us <code class="p-1 bg-light rounded language-javascript">console.log</code> as often as we'd like. The computer will display the output on a line in the console.
             We can also use <code class="p-1 bg-light rounded language-javascript">console.log</code> to output the value inside a variable. For example:<br>
-            <code class="language-javascript p-1 bg-light rounded">const oscar = "Bunting";<br>console.log (oscar);<br><br><b>Output/Console:</b><br><br>"Bunting"</code>
+            <code class="language-javascript p-1 bg-light rounded">const oscar = "Bunting";<br>console.log (oscar);<br><br><b>Output/Console:</b><br><br>Bunting</code>
             <br><br>In this example, it's critial to define the variable before trying to log it's value to the console, otherwise it will throw an error.</p>
 
-            <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log" role="button">Read Documentation</a>
-            <hr/>
+                <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log" role="button">Read Documentation</a>
+                <hr/>
+
+        <h3>Using Variables</h3>
+
+            <p>We alrerady know that we use <code class="p-1 bg-light rounded language-javascript">let</code> to create variables that can be updated.
+            We can also set the value of one variable to be the name of another variable to output the stored value. For example:<br><br>
+            <code class="p-1 bg-light rounded language-javascript">let defaultLocation = "Reigate";<br>
+            let currentLocation = "London";<br><br>
+            currentLocation = defaultLocation;<br>
+            console.log(currentLocation);<br><br>
+            <b>Output/Console:</b><br><br>
+            Reigate
+        </code></p>
     </div>
     
 </body>
