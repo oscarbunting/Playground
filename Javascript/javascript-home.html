@@ -88,7 +88,8 @@
 
 
            <h3>Values + Variables</h3>
-           <p>As well as strings we can store numbers, or numeric values in variables. For example:<br><br>
+                
+            <p>As well as strings we can store numbers, or numeric values in variables. For example:<br><br>
             <code class="p-1 bg-light rounded">const numberOfLikes = 5;<br><br>
             console.log(numberOfLikes);<br><br>
             <b>Output/console:</b><br><br>
@@ -101,20 +102,35 @@
             We can do all types of equations icluding adding (+) subtracting (-) multiplyng (*) and dividing (/).
             When we store numbers in variables, we can use them for calulattions too! <br><br>
             <code class="p-1 bg-light rounded">const numberOfSteps = 70;<br>
-                console.log("You're on step:");<br>
-                console.log(numberOfSteps + 1);<br><br>
+            console.log("You're on step:");<br>
+            console.log(numberOfSteps + 1);<br><br>
+            <b>Output/Console</b><br><br>
+            You're on step:<br>
+            71<br><br></code>
+            Since exprssions become values, we can store the calculation results inside variables too. In the below example, we're storing the final figure inside of the 'total' variable.<br><br>
+            <code class="p-1 bg-light rounded">
+            const private = 3;<br>
+            const public = 10;<br>
+            const total = private + public;<br>
+            console.log("Total posts: " + total);<br><br>
+            <b>Output/Console</b><br><br>
+            Total posts: 13</code><br><br></p>
+
+                
+                <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators" role="button">Read Documentation</a>
+                <hr/>
+
+            <h3>True & False</h3>
+
+                <p>There are some other types of values that we haven't talked about yet, <code>true</code> & <code>false</code>. There are no quotes around it, and its not numeric.
+                True, (or false) is perfect for situations where we need to check if something is turned on or a feature is enabled.
+                We can store true or false in a variable and call it back later, just like any other value. For example: <br><br>
+                <code class="p-1 bg-light rounded">const chargedStatus = false;<br>
+                let userCharge = chargedStatus;<br>
+                console.log(chargedStatus);<br><br>
                 <b>Output/Console</b><br><br>
-                You're on step:<br>
-                71<br><br></code>
-                Since exprssions become values, we can store the calculation results inside variables too. In the below example, we're storing the final figure inside of the 'total' variable.<br><br>
-                <code class="p-1 bg-light rounded">
-                    const private = 3;<br>
-                    const public = 10;<br>
-                    const total = private + public;<br>
-                    console.log("Total posts: " + total);<br><br>
-                    <b>Output/Console</b><br><br>
-                    Total posts: 13</code>
-        </p>
+                false
+                </code></p>
     </div>
     
 </body>
