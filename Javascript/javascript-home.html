@@ -134,23 +134,24 @@
                 When we add an <code class="p-1 bg-light rounded">!</code> before a <code class="p-1 bg-light rounded">true</code> makes the expression reult in <code class="p-1 bg-light rounded">false</code>
                 Anything that is NOT <code class="p-1 bg-light rounded">true</code> must be <code class="p-1 bg-light rounded">false</code>.<br>
                 The <code class="p-1 bg-light rounded">!</code> sign is the <b>negation operator</b>. It turns values into their opposite. For example: <br><br>
-                <code class="p-1 bg-light rounded">console.log(! true);<br><br>
+                <code class="p-1 bg-light rounded">console.log(!true);<br><br>
                 <b>Output/Console:</b><br><br>
                 false</code><br><br>
                 It can be used the other way around too, for changing <code class="p-1 bg-light rounded">false</code> into <code class="p-1 bg-light rounded">true</code>
                 <br>We can also use the <code class="p-1 bg-light rounded">!</code> operator with variables to negate the value they store. For example:<br><br>
                 <code class="p-1 bg-light rounded">
                     const isMorning = true;<br>
-                    console.log(! isMorning);<br><br>
+                    console.log(!isMorning);<br><br>
                     <b>Output / Console</b><br><br>
                     false
                 </code><br><br>
-                We can save a whole negation in another variable, too.<br>
+                We can save a whole negation in another variable, too. In the below example, we create a variable that is true when it is morning, and felse any other time of the day. We then created another variable, that displays false when morning is true, and vice versa, by using the negation.<br>
                 <code class="p-1 bg-light rounded">
                     const isMorning = true;<br>
-                    const isEvening = ! isMorning;<br>
+                    const isEvening = !isMorning;<br>
                     console.log(isEvening);<br><br>
                     <b>Console/Output</b><br><br>
+                    false
 
                 </code>
                 </p>
