@@ -161,7 +161,7 @@
                     <hr/>
 
 
-                <h3>Checking Number Equality</h3>
+                <h3><code class="p-1 bg-light rounded">===</code> Equality Operator</h3>
 
 
                     <p>Now we know how to create, store and call back values, but how do we compare them to one another?
@@ -173,7 +173,7 @@
                      true</code>
                      We can also compare the value of a stored variable against another value or a number determined on the spot.
                      For example here, we're checking if the <code class="p-1 bg-light rounded">votes</code> variable contains avalue equal to 11:<br><br>
-                     <code class="p-1 bg-light rounded">const votes = 11;<br>
+                     <code class="p-1 bg-light rounded">const votes = 12;<br>
                         console.log(votes === 11);<br><br>
                     <b>Output/console:</b><br><br>
                     false
@@ -184,6 +184,21 @@
                     
                         <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality" role="button">Read Documentation</a>
                         <hr/>
+
+
+                <h3><code class="p-1 bg-light rounded">!==</code> Inequality Operator</h3>
+
+
+                    <p>To check if a number <em>isn't</em> equal to another we can use the <code class="p-1 bg-light rounded">!==</code>inequality operator.<br>
+                    When a number is not equal to another, the inequality operator will output <code class="p-1 bg-light rounded">true</code>, the opposite of what the equality operator would do in the same situation.
+                    We can also use these operators inside of variables, for example:
+                    <code class="p-1 bg-light rounded">
+                        const batteryLevel = 78;<br>
+                        const charged = batteryLevel === 100;<br>
+                        console.log(charged)<br><br>
+                        <b>Output/Console:</b><br><br>
+                        false
+                    </code></p>
 
 
     </div>
