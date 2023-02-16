@@ -317,7 +317,7 @@
 
 
                         <p>With logical operators, we can connect two or more conditions to decide a result.<br>
-                        The <b>and</b> operator <code class="p-1 bg-light rounded">&&</code> will only return <code class="p-1 bg-light rounded">true</code> if all the conditions are also <code class="p-1 bg-light rounded">true</code>. For example: <br><br>
+                        The <b>and</b> operator, <code class="p-1 bg-light rounded">&&</code> will only return <code class="p-1 bg-light rounded">true</code> if all the conditions are also <code class="p-1 bg-light rounded">true</code>. For example: <br><br>
                         <code class="p-1 bg-light rounded">
                             let isBatteryOn = true;<br>
                             let isSwitchOn = true;<br>
@@ -325,8 +325,18 @@
                             <b>Console/Output:</b><br><br>
                             true
                         </code><br><br>
-                        In the above example, we want to check that <em>both</em> the <code class="p-1 bg-light rounded">isBatteryOn</code> variable <em>and</em> the <code class="p-1 bg-light rounded">isSwitchOn</code> variable are true before out putting true, so we used the <code class="p-1 bg-light rounded">&&</code> operator to make sure they're both true.
-                        </p>
+                        In the above example, we want to check that <em>both</em> the <code class="p-1 bg-light rounded">isBatteryOn</code> variable <em>and</em> the <code class="p-1 bg-light rounded">isSwitchOn</code> variable are true before out putting true, so we used the <code class="p-1 bg-light rounded">&&</code> operator to make sure they're both true. If one of the values was false the final output would also be <code class="p-1 bg-light rounded">false</code><r><br></r>
+                        <br>We can also store the result of a logical exprerssion in a variable, for example <code class="p-1 bg-light rounded">let result = isBatteryOn && isSwitchOn;</code> to be called back later.<br><br>
+                        We can also use the <b>and</b> operator to check if other operators are true, and only return true if the other rules have returned true. In the example below, we want to check if the cost is less than the selling price, and also make sure that the profit is above zero. Only if both of these conditions are met should true be returned. lets see how we can make this happen:<br><br>
+                        <code class="p-1 bg-light rounded">
+                            let cost = 50; <br>
+                            let sellPrice = 60; <br>
+                            const profit = sellPrice - cost; <br>
+                            const result = cost < sellPrice && profit > 0; <br>
+                            console.log(result);<br><br>
+                            <b>Output/Console:</b><br><br>
+                            true
+                        </code></p>
 
     </div>
     
