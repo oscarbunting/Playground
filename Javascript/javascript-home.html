@@ -308,7 +308,7 @@
 
 
                             
-                            <a class="btn btn-primary btn-sm" href="hhttps://www.w3schools.com/js/js_operators.asp" role="button">Read Documentation</a>
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_operators.asp" role="button">Read Documentation</a>
                             <hr/>
                         
 
@@ -336,7 +336,23 @@
                             console.log(result);<br><br>
                             <b>Output/Console:</b><br><br>
                             true
+                        </code><br><br>
+                        This is a bit tricky so we'll do one more example. In this next example we only want to output <code class="p-1 bg-light rounded">true</code> if we can confirm that the user is an admin. In this case, admins must be signed in, have a level of 20 or more and also have the isAdmin value be true. We can only grant admin access if all of these are true.<br>
+                        <code class="p-1 bg-light rounded">
+                            let isAdmin = true;<br>
+                            let isLoggedIn = true;<br>
+                            let acessLevel = 30;<br>
+                            let adminAcess = isAdmin && isLoggedIn && acessLevel >= 20;<br>
+                            console.log(adminAcess);<br><br>
+                            <b>Console/Output:</b><br><br>
+                            true
                         </code></p>
+
+
+
+                            
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_comparisons.asp" role="button">Read Documentation</a>
+                            <hr/>
 
     </div>
     
