@@ -270,16 +270,41 @@
 
 
                 <h3>Values & Types</h3>
-                <p>We've already seen and used a lot of different kinds of values. In programming lingo, these different kind of values are called <b>types</b>.<br><br>
-                <b>Strings</b> are charecters between quotes <code class="p-1 bg-light rounded">" "</code>, like the value <code class="p-1 bg-light rounded">"Cookies"</code>.<br><br>
-                <b>Numbers</b> are another type we've already used. They represent numerical values like <code class="p-1 bg-light rounded">42</code>.<br><br>
-                The <b>Boolean</b> type only contains two values: the special values <code class="p-1 bg-light rounded">true</code> and <code class="p-1 bg-light rounded">false</code>.<br><br>
-                When we store a value inside a variable, we say that we <b>assign</b> a value to a variable.</p>
+
+
+                        <p>We've already seen and used a lot of different kinds of values. In programming lingo, these different kind of values are called <b>types</b>.<br><br>
+                        <b>Strings</b> are charecters between quotes <code class="p-1 bg-light rounded">" "</code>, like the value <code class="p-1 bg-light rounded">"Cookies"</code>.<br><br>
+                        <b>Numbers</b> are another type we've already used. They represent numerical values like <code class="p-1 bg-light rounded">42</code>.<br><br>
+                        The <b>Boolean</b> type only contains two values: the special values <code class="p-1 bg-light rounded">true</code> and <code class="p-1 bg-light rounded">false</code>.<br><br>
+                        When we store a value inside a variable, we say that we <b>assign</b> a value to a variable.</p>
 
 
                             
                             <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" role="button">Read Documentation</a>
                             <hr/>
+
+
+                <h3>Combining values with <code class="p-1 bg-light rounded">+</code></h3>
+
+
+                        <p><code class="p-1 bg-light rounded">+</code> is the joining or adding sign. When joining two variables, we can get different results depending on their types.<br>
+                        Strings and numbers will act differently when joined or added to one another. For example:<br><br>
+                        <code class="p-1 bg-light rounded">console.log("10" + "10");</code> would output <code class="p-1 bg-light rounded">1010</code> because they are strings, not numeric values.<br>
+                        On the other hand, <code class="p-1 bg-light rounded">console.log(10 + 10);</code> would output <code class="p-1 bg-light rounded">20</code>, because this time we used a numeric value.<br><br>
+                        If we try to combine numbers and strings, the number will automagically be transformed into a string, for example:
+                        <code class="p-1 bg-light rounded">console.log(10 + "10");</code> would output <code class="p-1 bg-light rounded">1010</code> because the numeric value was turned into a string.<br><br>
+                        Adding a number to a string also works when we use a variable like <code class="p-1 bg-light rounded">score</code> that stores a number, instead of a numeric value. For example:<br><br>
+                        <code class="p-1 bg-light rounded">
+                            const score = 99;<br>
+                            const result = "Your score: " + score ;<br>
+                            console.log(result);<br><br>
+                            <b>Output/Console:</b><br><br>
+                            Your score: 99<br><br>
+                            </code>
+                        We can also combine strings and booleans together, or (just like with numbers and strings) a variable that has a value of a boolean will work too. Also just like with strings and numbers, when we combine a boolean and a string, the boolean is converted to a string.
+                        <br><br>For example, <code class="p-1 bg-light rounded">console.log("You Passed: " + true);</code> would output <code class="p-1 bg-light rounded">You Passed: true</code>.
+                        </p>
+                        
 
     </div>
     
