@@ -354,6 +354,62 @@
                             <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_comparisons.asp" role="button">Read Documentation</a>
                             <hr/>
 
+
+                    <h3>The <b>OR</b> logical operator <code class="p-1 bg-light rounded">||</code></h3>
+
+
+                        
+                        <p>The and operator requires all of the conditions to return true, but what if we only want one condition to be true?
+                        Introducing the or operator, if all the conditions are false then it will return false, however if only one is true it will output true.<br><br>
+                        We already know that the <b>NOT</b> operator (<code class="p-1 bg-light rounded">!</code>) negates a boolean value. That means that it returns <code class="p-1 bg-light rounded">true</code> is a condition is <code class="p-1 bg-light rounded">false</code> and vice versa.<br>
+                        We can also use <code class="p-1 bg-light rounded">!</code> to negate <em>logical values</em> as well. To do that, we place the logical expression between parentheses, like in the example below:<br><br>
+                        <code class="p-1 bg-light rounded">
+                            let cost = 50; <br>
+                            let sellPrice = 60; <br>
+                            const profit = sellPrice - cost; <br>
+                            const result = !(cost < sellPrice && profit > 0); <br>
+                            console.log(result);<br><br>
+                            <b>Output/Console:</b><br><br>
+                            false
+                        </code><br><br>The above example should output true, however because we used the not operator and added parentheses, it displays the opposite.
+                        </p>
+
+
+                             
+                             <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR" role="button">Read Documentation</a>
+                             <a class="btn btn-secondary btn-sm" href="/Javascript/Projects/Flight Booking App/index.html" role="button">View Demo</a>
+                            <hr/>
+
+
+                    
+
+                        
+                    <h3>Making Decisions</h3>
+                        
+
+
+                        <p>Smart programs use booleans to decide whether to <em>run</em> lines of code or <em>skip</em> them.<br>
+                        How can we write code that adapts to different situations?<br> By uisng the <b>if statement</b>. We code the <code class="p-1 bg-light rounded">if</code> keywork for an if statement. For example:<br><br>
+                        <code class="p-1 bg-light rounded">
+                            if (true) {<br>
+                            console.log("Hello World");<br>
+                            }<br><br>
+                            <b>Console / Output:</b><br><br>
+                            Hello World
+                        </code><br><br>
+                        The <code class="p-1 bg-light rounded">if</code> statement only <em>runs</em> code if the boolean its relying on is <code class="p-1 bg-light rounded">true</code>.<br>
+                        It's like telling the computer <code class="p-1 bg-light rounded">if</code> something is <code class="p-1 bg-light rounded">true</code> then do <em>this</em>.<br><br>
+                        Values like <code class="p-1 bg-light rounded">true</code> are called <b>conditions</b>. Statements relying on conditions are called <b>conditionals</b>.<br><br>
+                        Conditions <em>decide</em> if the code runs or gets skipped. They come in between parentheses.
+                        </p><br>
+
+
+
+
+                            
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
+                            <hr/>
+
     </div>
     
 </body>
