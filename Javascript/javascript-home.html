@@ -304,7 +304,55 @@
                         We can also combine strings and booleans together, or (just like with numbers and strings) a variable that has a value of a boolean will work too. Also just like with strings and numbers, when we combine a boolean and a string, the boolean is converted to a string.
                         <br><br>For example, <code class="p-1 bg-light rounded">console.log("You Passed: " + true);</code> would output <code class="p-1 bg-light rounded">You Passed: true</code>.
                         </p>
+
+
+
+                            
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_operators.asp" role="button">Read Documentation</a>
+                            <hr/>
                         
+
+                    <h3>Introduction to Logical Operators</h3>
+
+
+
+                        <p>With logical operators, we can connect two or more conditions to decide a result.<br>
+                        The <b>and</b> operator, <code class="p-1 bg-light rounded">&&</code> will only return <code class="p-1 bg-light rounded">true</code> if all the conditions are also <code class="p-1 bg-light rounded">true</code>. For example: <br><br>
+                        <code class="p-1 bg-light rounded">
+                            let isBatteryOn = true;<br>
+                            let isSwitchOn = true;<br>
+                            console.log(isBatteryOn && isSwitchOn);<br><br>
+                            <b>Console/Output:</b><br><br>
+                            true
+                        </code><br><br>
+                        In the above example, we want to check that <em>both</em> the <code class="p-1 bg-light rounded">isBatteryOn</code> variable <em>and</em> the <code class="p-1 bg-light rounded">isSwitchOn</code> variable are true before out putting true, so we used the <code class="p-1 bg-light rounded">&&</code> operator to make sure they're both true. If one of the values was false the final output would also be <code class="p-1 bg-light rounded">false</code><r><br></r>
+                        <br>We can also store the result of a logical exprerssion in a variable, for example <code class="p-1 bg-light rounded">let result = isBatteryOn && isSwitchOn;</code> to be called back later.<br><br>
+                        We can also use the <b>and</b> operator to check if other operators are true, and only return true if the other rules have returned true. In the example below, we want to check if the cost is less than the selling price, and also make sure that the profit is above zero. Only if both of these conditions are met should true be returned. lets see how we can make this happen:<br><br>
+                        <code class="p-1 bg-light rounded">
+                            let cost = 50; <br>
+                            let sellPrice = 60; <br>
+                            const profit = sellPrice - cost; <br>
+                            const result = cost < sellPrice && profit > 0; <br>
+                            console.log(result);<br><br>
+                            <b>Output/Console:</b><br><br>
+                            true
+                        </code><br><br>
+                        This is a bit tricky so we'll do one more example. In this next example we only want to output <code class="p-1 bg-light rounded">true</code> if we can confirm that the user is an admin. In this case, admins must be signed in, have a level of 20 or more and also have the isAdmin value be true. We can only grant admin access if all of these are true.<br>
+                        <code class="p-1 bg-light rounded">
+                            let isAdmin = true;<br>
+                            let isLoggedIn = true;<br>
+                            let acessLevel = 30;<br>
+                            let adminAcess = isAdmin && isLoggedIn && acessLevel >= 20;<br>
+                            console.log(adminAcess);<br><br>
+                            <b>Console/Output:</b><br><br>
+                            true
+                        </code></p>
+
+
+
+                            
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_comparisons.asp" role="button">Read Documentation</a>
+                            <hr/>
 
     </div>
     
