@@ -401,7 +401,32 @@
                         It's like telling the computer <code class="p-1 bg-light rounded">if</code> something is <code class="p-1 bg-light rounded">true</code> then do <em>this</em>.<br><br>
                         Values like <code class="p-1 bg-light rounded">true</code> are called <b>conditions</b>. Statements relying on conditions are called <b>conditionals</b>.<br><br>
                         Conditions <em>decide</em> if the code runs or gets skipped. They come in between parentheses.
-                        </p><br>
+                        <br><code class="p-1 bg-light rounded">if</code> statements don't decide on skipping or running the entire codebasde, they only make deciions about a <em>piece of code</em>.
+                        The piece of code that is either run or skipped is called a <b>code block</b>. We write it between curly braces <code class="p-1 bg-light rounded">{ }</code>. For example:<br><br>
+                        <code class="p-1 bg-light rounded">
+                            if (true) {<br>
+                            console.log("I'm a code block!");<br>
+                            console.log("I'm a second line in a code block");<br>
+                            }
+                            <br><br>
+                            <b>Output/console:</b><br><br>
+                            I'm a code block!<br>
+                            I'm a second line in a code block
+                           </code>
+                            <br><br>A code block can be more than a one-liner, we can use as many lines as we'd like.<br><br>
+                        Instead of uisng the boolean <code class="p-1 bg-light rounded">true</code>, we can save it in a variable and use that as a conditon.<br>
+                        For example in the below snippet, we're storing the boolean in the variable greet and using that to see if we should run our code block.<br><br>
+                        <code class="p-1 bg-light rounded">
+                            const greet = true;<br>
+                            if (greet) {<br>
+                            console.log("Hello!");<br>
+                            }
+                            <br><br>
+                            <b>Output/console:</b><br><br>
+                            Hello!
+                           </code><br><br>
+                        Only if the <code class="p-1 bg-light rounded">greet</code> variable contains the value <code class="p-1 bg-light rounded">true</code> will our code block run.</p><br>
+            
 
 
 
