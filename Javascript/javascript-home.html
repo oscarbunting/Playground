@@ -384,7 +384,7 @@
                     
 
                         
-                    <h3>Making Decisions</h3>
+                    <h3>Introducing the <code class="p-1 bg-light rounded">if</code> statement</h3>
                         
 
 
@@ -432,6 +432,98 @@
 
 
                             
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
+                            <hr/>
+
+
+
+                    <h3>Using Conditions</h3>
+
+
+                           
+                           <p>To make smarter programs we need <code class="p-1 bg-light rounded">if</code> statements that rely on smarter conditions. In the example below we're creating a quiz that need to check if the answer is wrong or right.<br>
+                            We can acomplish this with a combintions of <code class="p-1 bg-light rounded">if</code> statements and logical operators. Lets take a look:<br><br>
+                            <code class="p-1 bg-light rounded">
+                                let answer = "Picasso";<br>
+                                if (answer === "Picasso") {<br>
+                                console.log(answer + " is correct!");<br>
+                                }<br>
+                                if (answer !== "Picasso") {<br>
+                                    console.log(answer + " is wrong!");<br>
+                                   }<br><br>
+
+
+                                   <b>Output / Console:</b><br><br>
+                                   If correct: Picasso is correct!<br>
+                                   If incorrect: (answer) is wrong!
+                        
+                            </code><br><br>
+                            <code class="p-1 bg-light rounded">if</code> statements work with all the comparison operators we've explored so far, we can also use <code class="p-1 bg-light rounded">===</code> to compare boolean values within an <code class="p-1 bg-light rounded">if</code> statement.<br><br>
+                             If we want to the use result of a comparison multiple times without having to write it every time we use an if statement, we can store it in a variable and use that for our <code class="p-1 bg-light rounded">if</code> statements, like in the example below:<br><br>
+                             <code class="p-1 bg-light rounded">
+                                let score = 51;<br>
+                                let pass = score > 50;<br>
+                                if (pass) {<br>
+                                console.log("The if statement resulted in true because the score is higher than 50.");<br>
+                                }<br><br>
+                                <b>Output/console:</b><br><br>
+                                The if statement resulted in true because the score is higher than 50.
+                                </code>
+                            </p>
+
+
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
+                            <hr/>
+
+
+
+                    <h3>Introducing the <code class="p-1 bg-light rounded">else</code> statement</h3>
+
+
+                            <p>Great software doesn't just decide what to do when a condition is <code class="p-1 bg-light rounded">true</code>, it also has a back up plan if the condition is <code class="p-1 bg-light rounded">false.</code><br><br>
+                            We already know <code class="p-1 bg-light rounded">if</code> statements help us execute code if a certain <code class="p-1 bg-light rounded">condition</code> is <code class="p-1 bg-light rounded">true</code>.<br><br>
+                            Take the example below, we want to log the number 1 to the console <code class="p-1 bg-light rounded">if</code> the <code class="p-1 bg-light rounded">condition</code> is <code class="p-1 bg-light rounded">true</code>.
+                            But we also want to log the number 2 if the <code class="p-1 bg-light rounded">condition</code> is <code class="p-1 bg-light rounded">false</code>.
+                            <code class="p-1 bg-light rounded"><br><br>
+                                let condition = false;<br>
+                                if (condition) {<br>
+                                console.log("1");<br>
+                                }  <br> 
+                                if (!condition) {<br>
+                                console.log("2");<br>
+                                } <br><br> 
+                                <b>Console/Output:</b><br><br>
+                                If true: 1<br>
+                                If false: 2<br><br>
+                            </code>
+                            While this code works, we're starting to repeat ourselves and the code is becoming less readable. This is where the <code class="p-1 bg-light rounded">else</code> statement comes in, lets take a look at another way we can complete the same task in a more effcient way:<br><br>
+                            <code class="p-1 bg-light rounded">
+                                let condition = false;<br>
+                                if (condition) {<br>
+                                console.log("1");<br>
+                                }  <br> 
+                                else {<br>
+                                console.log("2");<br>
+                                } <br><br> 
+                                <b>Console/Output:</b><br><br>
+                                If true: 1<br>
+                                If false: 2<br><br>
+                            </code>
+                           The <code class="p-1 bg-light rounded">else</code> statement of an <code class="p-1 bg-light rounded">if</code> / <code class="p-1 bg-light rounded">else</code> statement always goes at the end of the argument.<br><br>
+                           <code class="p-1 bg-light rounded">else</code> statements don't need their own conditions, because it only ever handles the situations where <code class="p-1 bg-light rounded">if</code> is <code class="p-1 bg-light rounded">false</code>.<br><br>
+                            <br>The else statement is like a default response, below it displays <code class="p-1 bg-light rounded">It's not 1</code> for all numbers not equal to 1.<br><br>
+                           <code class="p-1 bg-light rounded">
+                            let number = 99;<br>
+                            if (number === 1) {<br>
+                            console.log("It's 1");<br>
+                            } else {<br>
+                            console.log("It's not 1");<br>
+                            }
+                           </code><br><br>
+                            In conclusion, the <code class="p-1 bg-light rounded">else</code> statement runs a code block when an <code class="p-1 bg-light rounded">if</code> statement returns false and doesn't require it's own conditon.</p>
+                           
+
+
                             <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
                             <hr/>
 
