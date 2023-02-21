@@ -509,9 +509,17 @@
                                 If true: 1<br>
                                 If false: 2<br><br>
                             </code>
-                           The <code class="p-1 bg-light rounded">else</code> statement of an <code class="p-1 bg-light rounded">if</code> / <code class="p-1 bg-light rounded">else</code> statement always goes at the end.<br>
-                           <code class="p-1 bg-light rounded">else</code> statements don't need their own conditions, because it only ever handles the situations where <code class="p-1 bg-light rounded">if</code> is <code class="p-1 bg-light rounded">false</code>.
-                            </p>
+                           The <code class="p-1 bg-light rounded">else</code> statement of an <code class="p-1 bg-light rounded">if</code> / <code class="p-1 bg-light rounded">else</code> statement always goes at the end of the argument.<br><br>
+                           <code class="p-1 bg-light rounded">else</code> statements don't need their own conditions, because it only ever handles the situations where <code class="p-1 bg-light rounded">if</code> is <code class="p-1 bg-light rounded">false</code>.<br><br>
+                            <br>The else statement is like a default response, below it displays <code class="p-1 bg-light rounded">It's not 1</code> for all numbers not equal to 1.<br><br>
+                           <code class="p-1 bg-light rounded">
+                            let number = 99;<br>
+                            if (number === 1) {<br>
+                            console.log("It's 1");<br>
+                            } else {<br>
+                            console.log("It's not 1");<br>
+                            }
+                           </code> </p>
                           
     </div>
     
