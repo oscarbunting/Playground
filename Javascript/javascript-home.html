@@ -527,6 +527,59 @@
                             <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
                             <hr/>
 
+
+
+                    <h3>Using <code class="p-1 bg-light rounded">if</code> / <code class="p-1 bg-light rounded">else</code></h3>
+
+
+                           
+                           <p>Let's learn about how to write conditional statements that handle specific conditions.<br>
+                            We already know about <code class="p-1 bg-light rounded">if</code> and <code class="p-1 bg-light rounded">else</code> statements, but what if we want to run code block when <code class="p-1 bg-light rounded">if</code> is false but with added conditons?<br>
+                            We can use the <code class="p-1 bg-light rounded">else if</code> statement, which checks another condition when the condition before it is <code class="p-1 bg-light rounded">false</code>.<br>
+                            <code class="p-1 bg-light rounded">else</code> statements don't contain conditions, while <code class="p-1 bg-light rounded">else if</code> statements do. Lets look at an example:<br><br>
+                            <code class="p-1 bg-light rounded">
+                            let hour = 14;<br>
+                            if (hour < 12) {<br>
+                            console.log("Good morning");<br>
+                            } else if (hour < 17) {<br>
+                            console.log("Good afternoon");<br>
+                            }
+                            </code><br><br>
+                            In the example above, we want to display good morning if the hour is less than 12, but good afternoon if the hour is less than 17.<br><br>
+                            We can also add an <code class="p-1 bg-light rounded">else</code> statement at the end after <em>both</em> <code class="p-1 bg-light rounded">if</code> <em>and</em> <code class="p-1 bg-light rounded">if else</code> statements.<br>
+                            You can think of it as telling the computer:<br><br>
+                            (<code class="p-1 bg-light rounded">if</code>) <b>if this isn't true then</b><br> (<code class="p-1 bg-light rounded">else if</code>) check <b>if this is true</b> <br> (<code class="p-1 bg-light rounded">else</code>) This isn't true. <b>Output this</b><br><br>
+                            Let's take a look at an example with <code class="p-1 bg-light rounded">if</code>, <code class="p-1 bg-light rounded">else if</code> and <code class="p-1 bg-light rounded">else</code> all in one snippet.<br><br>
+                            <code class="p-1 bg-light rounded">
+                                let hour = 18;<br>
+                                if (hour < 12) {<br>
+                                console.log("Good morning");<br>
+                                } else if (hour < 17) {<br>
+                                console.log("Good afternoon");<br>
+                                }  else {<br>
+                                console.log("Good night");<br>
+                                }
+
+                                </code><br><br>
+                            As long as they come before the <code class="p-1 bg-light rounded">else</code> statement, we can add as many <code class="p-1 bg-light rounded">else if</code> statements as we'd like. Let's take a look at an example with multiple <code class="p-1 bg-light rounded">else if</code> statements:<br><br>
+                            <code class="p-1 bg-light rounded">
+                                let hour = 20;<br>
+                                if (hour < 12) {<br>
+                                console.log("Good morning");<br>
+                                } else if (hour < 17) {<br>
+                                console.log("Good afternoon");<br>
+                                } else if (hour < 21) {<br>
+                                console.log("Good evening");<br>
+                                } else {<br>
+                                console.log("Good night");<br>
+                                }
+                            </code><br><br>
+                            </p>
+
+
+                            <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
+                            <hr/>
+
     </div>
     
 </body>
