@@ -580,7 +580,68 @@
                             <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_if_else.asp" role="button">Read Documentation</a>
                             <hr/>
 
-    </div>
+
+
+                    <h3>Self assigning variables</h3>
+
+
+                            <p>Let's learn a new concept which explains how variables keep track of things like adding or removing dollars from a wallet.<br><br>
+                               When we create a variable, we <b>assign</b> it a value, for example <code class="p-1 bg-light rounded">let wallet = 3;</code><br><br>
+                               <b>Self-assignment</b> is when we set a variable to its own value, for example we can set <code class="p-1 bg-light rounded">wallet</code> to its value of <code class="p-1 bg-light rounded">3</code> with <code class="p-1 bg-light rounded">wallet = wallet</code>, like in the example below:<br><br>
+                               <code class="p-1 bg-light rounded">
+                                let wallet = 3;<br>
+                                wallet = wallet;<br>
+                                console.log(wallet);<br><br>
+                                <b>Console/output:</b><br><br>
+                                3
+                               </code><br><br>
+                            Since we can self-assign variables, we can increase or decrease variables set to numerical values, for example by increasing <code class="p-1 bg-light rounded">wallet</code> with <code class="p-1 bg-light rounded">wallet = wallet + 1</code>.<br>
+                            Self-assigning variables let us track how data changes over time, for example a user might want to add <code class="p-1 bg-light rounded">2</code> dollars to their wallet and then remove <code class="p-1 bg-light rounded">1</code>, like in the example below:<br><br>
+                            <code class="p-1 bg-light rounded">
+                                let wallet = 3;<br>
+                                wallet = wallet + 2;<br>
+                                wallet = wallet - 1;<br>
+                                console.log(wallet);<br><br>
+                                <b>Console/Output:</b><br><br>
+                                4
+                            </code><br><br>
+                            Variables set to strings work in the same way, we can set their value to be the variable name and add or remove things from them.<br><br>
+                            <code class="p-1 bg-light rounded">
+                                let nameInfo = "Account Name:";<br>
+                                nameInfo = nameInfo + " Elton";<br>
+                                nameInfo = nameInfo + " John";<br>
+                                console.log(nameInfo);<br><br>
+                                <b>Console/output:</b><br><br>
+                                Account Name: Elton John
+
+                            </code>
+                            </p>
+
+
+                                    <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_variables.asp" role="button">Read Documentation</a>
+                                    <hr/>
+
+
+
+                    <h3>Self assignment operators</h3>
+
+
+                                <p>We already know that we can add or subtract from a variable by assigning it to itself and adding or subtracting, for example <code class="p-1 bg-light rounded">likes = likes + 1;</code><br><br>
+                                Intead of writing out the variables full name when assinging it to itself, we can use the <code class="p-1 bg-light rounded">+=</code> operator to add a number, for example <code class="p-1 bg-light rounded">likes += 1;</code> has the same result as the example above.<br><br>
+                                To subtract from a variables value, we use the <code class="p-1 bg-light rounded">-=</code> operator, for example <code class="p-1 bg-light rounded">likes -= 3;</code> subtracts 3 from the total value of <code class="p-1 bg-light rounded">likes</code>.<br><br>
+                                The <b>increment operator</b>, <code class="p-1 bg-light rounded">++</code>, placed after a variables name increases its value by 1, for example <code class="p-1 bg-light rounded">likes ++;</code> adds 1 to the total value of likes.<br><br>
+                                The <b>decrement operator</b>, <code class="p-1 bg-light rounded">--</code>, will decrease the total value by 1 when placed after the variables name, for example <code class="p-1 bg-light rounded">likes--;</code> will decrease the total by 1.<br><br>
+                                As far as I'm aware, increment and decrement operators require no space between the varaible name and the operator, for example <code class="p-1 bg-light rounded">likes ++</code> wouldn't work, while <code class="p-1 bg-light rounded">likes++</code> would.</p>
+   
+   
+   
+                        
+                                <a class="btn btn-primary btn-sm" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" role="button">Read Documentation</a>
+                                    <hr/>
+   
+
+
+        </div>
     
 </body>
 </html>
