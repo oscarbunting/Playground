@@ -665,7 +665,59 @@
 
                                     <a class="btn btn-primary btn-sm" href="https://www.w3schools.com/js/js_loop_while.asp" role="button">Read Documentation</a>
                                     <hr/>
-   
+
+
+
+
+
+
+                        <h3>Ending <code class="p-1 bg-light rounded">while</code> loops</h3>
+
+
+
+                                <p>So far we've learned how to create a while loop, now let's focus on how to stop them from looping infinitely.<br><br>
+                                In the example above, we can see that while the condition is  <code class="p-1 bg-light rounded">true</code>, the code will output  <code class="p-1 bg-light rounded">and again</code> forever.<br><br>
+                                The first step to controlling how long this loop lasts for is crrating a variable outside of the loop, in this cad lets call it  <code class="p-1 bg-light rounded">keepGoing</code>, and we'll assign it a  <code class="p-1 bg-light rounded">boolean</code> value.<br><br>
+                                Once we've created the variable that is outside of the loop, we then chnage the boolean value to <code class="p-1 bg-light rounded">false</code> inside the code block of the loop, which will then stop the loop. Lets take a look below:<br><br>
+                                <code class="p-1 bg-light rounded">
+                                    let keepGoing = true;<br>
+                                    while (keepGoing === true) {<br>
+                                    console.log("and again");<br>
+                                    keepGoing = false;<br>
+                                    }<br><br>
+                                    <b>console/output:<br><br></b>
+                                    and again<br><br></code>
+                                As we can see the <code class="p-1 bg-light rounded">while</code> code block logs <code class="p-1 bg-light rounded">and again</code>, then updates the <code class="p-1 bg-light rounded">keepGoing</code> varaible from <code class="p-1 bg-light rounded">true</code> to <code class="p-1 bg-light rounded">false</code>, which stops the loop from being run again.
+                                </p>
+                                
+
+
+
+                                
+                                <a class="btn btn-primary btn-sm" href="https://flexiple.com/javascript/infinite-loops-javascript/" role="button">Read Documentation</a>
+                                    <hr/>
+
+
+
+                        <h3>Controlling <code class="p-1 bg-light rounded">while</code> loops</h3>
+
+
+
+                                <p>Let's dive into controlling the times a while loop repeats its code, like a page that uses a loop to run its code from 1 to 10 times.<br><br>
+                                    To control the times a while loop repeats, we start with a variable set to a number. We call this variable a counter variable.<br><br>
+                                    Then, we use a comparison in the condition to compare the counter variable to a number. In this case, <code class="p-1 bg-light rounded">counter < 4</code>.<br><br>
+                                    Inside the code block, we make the condition return <code class="p-1 bg-light rounded">false</code> and stop the loop by incrementing the counter variable. In this case we'll use <code class="p-1 bg-light rounded">counter++</code><br><br>
+                                    This will loop the code until the <code class="p-1 bg-light rounded">counter</code> hits the number 4, then the loop will end.<br><br>
+                                    Since the entire code block runs when we loop, the order the we write code in matters. For example if we start teh counter at 5 and place the <code class="p-1 bg-light rounded">console.log</code> before the <code class="p-1 bg-light rounded">conter++</code> in teh code block the output will count from 5 upwards, however if we reverse the order and place <code class="p-1 bg-light rounded">counter++</code> first, the output will start at 6 because we added 1 before we outputted anything.<br><br>
+
+                            
+                                </p>
+
+
+
+                                        <a class="btn btn-primary btn-sm" href="https://flexiple.com/javascript/infinite-loops-javascript/" role="button">Read Documentation</a>
+                                        <hr/>
+
 
 
         </div>
