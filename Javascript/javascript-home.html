@@ -702,6 +702,18 @@
                         <h3>Controlling <code class="p-1 bg-light rounded">while</code> loops</h3>
 
 
+
+                                <p>Let's dive into controlling the times a while loop repeats its code, like a page that uses a loop to run its code from 1 to 10 times.<br><br>
+                                    To control the times a while loop repeats, we start with a variable set to a number. We call this variable a counter variable.<br><br>
+                                    Then, we use a comparison in the condition to compare the counter variable to a number. In this case, <code class="p-1 bg-light rounded">counter < 4</code>.<br><br>
+                                    Inside the code block, we make the condition return <code class="p-1 bg-light rounded">false</code> and stop the loop by incrementing the counter variable. In this case we'll use <code class="p-1 bg-light rounded">counter++</code><br><br>
+                                    This will loop the code until the <code class="p-1 bg-light rounded">counter</code> hits the number 4, then the loop will end.<br><br>
+                                    Since the entire code block runs when we loop, the order the we write code in matters. For example if we start teh counter at 5 and place the <code class="p-1 bg-light rounded">console.log</code> before the <code class="p-1 bg-light rounded">conter++</code> in teh code block the output will count from 5 upwards, however if we reverse the order and place <code class="p-1 bg-light rounded">counter++</code> first, the output will start at 6 because we added 1 before we outputted anything.<br><br>
+                                    
+                            
+                                </p>
+
+
         </div>
     
 </body>
